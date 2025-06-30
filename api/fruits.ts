@@ -12,9 +12,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   
 
   try {
-    const apiRes = await fetch(process.env.VITE_FRUIT_BASE_URL!, {
+    const apiRes = await fetch(process.env.FRUIT_BASE_URL!, {
       headers: {
-        'x-api-key': process.env.VITE_FRUIT_API_KEY!,
+        'x-api-key': process.env.FRUIT_API_KEY!,
         'Content-Type': 'application/json',
       },
     });
