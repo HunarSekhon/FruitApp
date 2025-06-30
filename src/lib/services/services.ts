@@ -1,5 +1,5 @@
-import type { FruitData } from '../types/fruit.types';
-import { apiClient } from './../lib/axios';
+import type { FruitData } from '../../types/fruit.types';
+import { apiClient } from '../axios';
 
 
 export const fruitService = {

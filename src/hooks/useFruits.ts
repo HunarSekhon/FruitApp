@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import type { FruitData } from '../types/fruit.types';
-import { fruitService } from '../api/services';
+import { fruitService } from '../lib/services/services';
 
 export const useFruits = () => {
   const [fruits, setFruits] = useState<FruitData[]>([]);
