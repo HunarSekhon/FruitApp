@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API_KEY = import.meta.env.VITE_FRUIT_API_KEY;
-const BASE_URL = '/api';
+const BASE_URL = import.meta.env.VITE_FRUIT_BASE_URL;
 
 export const apiClient = axios.create({
     baseURL: BASE_URL,
