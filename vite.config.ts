@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
     server: {
       proxy: {
         '/api': {
-          target: env.VITE_FRUIT_BASE_URL,
+          target: 'https://fruity-proxy.vercel.app/',
           changeOrigin: true,
           rewrite: (path) => path.replace(/^\/api/, ''),
           configure: (proxy) => {
